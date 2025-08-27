@@ -1,51 +1,52 @@
-# Astro Starter Kit: Basics
+# 🌐 NTD Portfolio
 
-```sh
-npm create astro@latest -- --template basics
+[![GitHub stars](https://img.shields.io/github/stars/NekoTheDev/NTD-Portfolio?style=social)](https://github.com/NekoTheDev/NTD-Portfolio/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/NekoTheDev/NTD-Portfolio?style=social)](https://github.com/NekoTheDev/NTD-Portfolio/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/NekoTheDev/NTD-Portfolio)](https://github.com/NekoTheDev/NTD-Portfolio/issues)
+[![GitHub license](https://img.shields.io/github/license/NekoTheDev/NTD-Portfolio)](./LICENSE)
+
+🚀 A clean and minimal **personal portfolio website** — built with [Astro](https://astro.build/)  and deployed with **GitHub Pages**.
+
+🔗 **Live Demo:** [nekothedev.github.io/NTD-Portfolio](https://nekothedev.github.io/NTD-Portfolio/)
+
+## 📸 Preview
+*(Optional: add a screenshot of your portfolio here)*  
+
+![Preview]()
+
+## 🛠️ Tech Stack
+- ⚡ [Astro](https://astro.build/) — Static site builder
+- 🌍 [GitHub Pages](https://pages.github.com/) — Deployment & hosting
+
+
+## 🚀 Getting Started
+
+### Clone the repo
+```bash
+git clone https://github.com/NekoTheDev/NTD-Portfolio.git
+cd NTD-Portfolio
+
+Install dependencies
+npm install
+
+Run locally
+npm run dev
+
+Build for production
+npm run build
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+### 6. Contact  
+```markdown
+## 📬 Contact
 
-Inside of your Astro project, you'll see the following folders and files:
+- GitHub: [@NekoTheDev](https://github.com/NekoTheDev)  
+- Email: **mtmn261509@gmail.com**
 
-```text
-/
-public/
- ├─ favicon.ico
- ├─ favicon-96x96.png
- ├─ apple-touch-icon.png
- ├─ web-app-manifest-192x192.png
- ├─ web-app-manifest-512x512.png
- └─ site.webmanifest
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+---
+
+✨ If you like this project, please give it a ⭐ on GitHub!
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

@@ -12,7 +12,7 @@
 ## 📸 Preview
 *(Optional: add a screenshot of your portfolio here)*  
 
-![Preview]()
+![Website Preview](public/web%20preview.png)
 
 ## 🛠️ Tech Stack
 - ⚡ [Astro](https://astro.build/) — Static site builder

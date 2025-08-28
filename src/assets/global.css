@@ -33,7 +33,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(17, 17, 17, 0.6); /* nền mờ */
+  background: rgba(15, 32, 39, 0.8); /* đồng bộ với gradient nền body */
   backdrop-filter: blur(10px);        /* blur */
   -webkit-backdrop-filter: blur(10px);
   display: flex;
@@ -127,29 +127,81 @@ body nav {
   user-select: none;
 }
 
-/* Mobile responsive */
+/* Mobile responsive - Bottom floating navbar */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block; /* hiện ☰ */
+  .navbar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%);
+    border-radius: 40px;
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    border-bottom: none;
+    z-index: 2000;
+    transition: all 0.3s cubic-bezier(.4,2,.3,1);
+  }
+
+  .navbar .logo {
+    display: none;
   }
 
   .nav-links {
-    position: absolute;
-    top: 70px; /* dưới navbar */
-    right: 0;
-    background: #111;
-    flex-direction: column;
-    width: 200px;
-    padding: 1rem;
-    gap: 1rem;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    position: static;
+    top: unset;
+    right: unset;
+    background: transparent;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    gap: 0;
+    box-shadow: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    transform: none;
+    transition: none;
   }
 
-  /* Khi active (menu mở) */
   .nav-links.active {
-    transform: translateX(0);
+    transform: none;
   }
+
+  /* Ẩn menu toggle */
+  .menu-toggle {
+    display: none !important;
+  }
+}
+
+/* Hiệu ứng bo tròn cho nav-link active ở mọi màn hình (ưu tiên cho mobile) */
+.nav-links li a.active {
+  background: #fff;
+  color: #0f2027;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-links li a.active {
+  animation: tabBounce 0.3s ease;
+}
+
+@keyframes tabBounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
 }
 
 
